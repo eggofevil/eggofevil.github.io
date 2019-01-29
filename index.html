@@ -1,23 +1,102 @@
----
-layout: default
----
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114339459-5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-<div class="home">
+          gtag('config', 'UA-114339459-5');
+        </script>
+        <!-- /Global site tag (gtag.js) - Google Analytics -->
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter49083491 = new Ya.Metrika2({
+                            id:49083491,
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true
+                        });
+                    } catch(e) { }
+                });
 
-  <h1 class="page-heading">Posts</h1>
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/tag.js";
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks2");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/49083491" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        <meta charset="utf-8">
+        <title>AG title page</title>
+        <meta name="author" content="A.Gurin">
+        <meta name="description" content="AG title page.">
+        <meta name="keywords" content="WEB development learning, WEB development, learning">
+        <meta property="og:image" content="" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="">
+        <link rel="shortcut icon" href="favicon.ico" type="image/ico">
+    </head>
+    <body>
+        <header class="main-header">
+            <section id="logo">AG</section>
+            <nav class="mainNavMenu">
+                Title page
+            </nav>
+        </header>
+        <main>
+            <!--<article class="main-info">
+                <section class="photo">
+                    PHOTO
+                </section>
+                <section class="about-me">
+                    ABOUT ME
+                </section>
+            </article>-->
+            <section class="portfolio">
+                    <nav class="linkNavMenu">
+                        <div class="linkListHeader">
+                            freeCodeCamp.org projects &#9660;
+                        </div>
+                        <ul class="linkList">
+                            <li class="linkListItem"><a href="https://eggofevil.github.io/build-a-pomodoro-clock/">Pomodoro clock</a></li>
+                            <li class="linkListItem"><a href="https://eggofevil.github.io/build-a-javascript-calculator-final/">Javascript calculator</a></li>
+                            <li class="linkListItem"><a href="https://eggofevil.github.io/build-a-tic-tac-toe-game-fcc/">Tic tac toe</a></li>
+                            <li class="linkListItem"><a href="https://eggofevil.github.io/use-the-twich-json-api-final/">Twich.tv monitor</a></li>
+                            <li class="linkListItem"><a href="https://eggofevil.github.io/build-a-wikipedia-viewer/">Wikipedia viewer RU</a></li>
+                            <li class="linkListItem"><a href="https://eggofevil.github.io/build-a-wikipedia-viewer-en/">Wikipedia viewer EN</a></li>
+                            <li class="linkListItem"><a href="https://eggofevil.github.io/show-the-local-weather/">Local weather monitor</a></li>
+                            <li class="linkListItem"><a href="https://eggofevil.github.io/random-quote-machine/">Random quote machine (not working now)</a></li>
+                            <li class="linkListItem"><a href="https://eggofevil.github.io/build-a-simon-game/">Simon game (still in work)</a></li>
+                        </ul>
+                        <div id="freeCodeCampLogo" class="linkListLogo"><a href="https://www.freecodecamp.org/"><img class="linkListLogoImg" src="img/freeCodeCamp.jpg"></a></div>
+                    </nav>
+                    <nav class="linkNavMenu">
+                        <div class="linkListHeader">
+                            HTML Academy projects &#9660;
+                        </div>
+                        <ul class="linkList">
+                            <li class="linkListItem"><a href="https://eggofevil.github.io/808797-device/">Device</a></li>
+                        </ul>
+                        <div id="htmlAcademyLogo" class="linkListLogo"><a href="https://htmlacademy.ru/?ref=808797"><img class="linkListLogoImg" src="img/htmlAcademy.jpg"></a></div>
+                    </nav>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <address>Created by A.Gurin: <a href="mailto:nucleusofgood@gmail.com">nucleusofgood@gmail.com</a></address>
+        </footer>
+        <script src="js/main.js" type="text/Javascript"></script>
+    </body>
+</html>
